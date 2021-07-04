@@ -5,26 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:school1"
         mc:Ignorable="d"
-        Title="Admin" Height="450" Width="800">
+        Title="Admin" Height="450" Width="800"
+      FontFamily="Comic Sans MS" FontSize="15">
     <Grid>
         <ScrollViewer>
-            <StackPanel>
+            <StackPanel x:Name="MSPanel" Visibility="Visible">
+                <TextBox x:Name="TBPoisk" TextChanged="TBPoisk_TextChanged" Width="300" Height="25" HorizontalAlignment="Left"/>
                 <DataGrid Name="DGServises" AutoGenerateColumns="False" HorizontalAlignment="Left" IsReadOnly="False" CanUserAddRows="False" SelectionChanged="DGServises_SelectionChanged">
                     <DataGrid.Columns>
                         <DataGridTemplateColumn>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal" Initialized="StackPanel_Initialized">
-                                        <MediaElement Width="150" Height="150" Initialized="MediaElement_Initialized"/>
+                                 
                                         <StackPanel>
+
                                             <TextBlock FontSize="15" Initialized="TextBlock_Initialized"/>
                                             <TextBlock FontSize="15" Initialized="TextBlock_Initialized_1"/>
                                             <TextBlock FontSize="15" Initialized="TextBlock_Initialized_2"/>
-                                            <StackPanel Orientation="Horizontal">
-                                                <Button Name="BRed" FontSize="15" Width="150" Content="Редактировать" Initialized="BRed_Initialized" Click="BRed_Click" />
-                                                <Button Name="BDel" FontSize="15" Width="150" Content="Удалить" Initialized="BDel_Initialized" Click="BDel_Click" />
-                                                <Button Name="BNew" FontSize="15" Width="150" Content="Новый заказ" Initialized="BNew_Initialized" Click="BNew_Click" />
-                                            </StackPanel>
+
                                         </StackPanel>
                                     </StackPanel>
                                 </DataTemplate>

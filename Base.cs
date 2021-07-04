@@ -8,6 +8,6 @@ namespace school1
 {
     class Base
     {
-        public static CarkovEntities CarkEnt;
+        public static Entities CarkEnt;
     }
 }

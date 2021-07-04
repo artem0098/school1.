@@ -4,29 +4,10 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="99e42a9b60f0471783ed7659f1c17097" Name="Diagram1">
-        <EntityTypeShape EntityType="CarkovModel.Client" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.ClientService" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.DocumentByService" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.Gender" Width="1.5" PointX="1.5" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.Manufacturer" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.ProductSale" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.Service" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.ServicePhoto" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CarkovModel.Tag" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
-        <AssociationConnector Association="CarkovModel.FK_Client_Gender" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ClientService_Client" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ClientService_Service" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ProductSale_ClientService" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_Product_Manufacturer" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ProductSale_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.AttachedProduct" ManuallyRouted="false" />
-        <AssociationConnector Association="CarkovModel.TagOfClient" ManuallyRouted="false" />
+      <Diagram DiagramId="17ac304e575c4186a06c23da6841383a" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Авторы" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Книги" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_Книги_Авторы" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

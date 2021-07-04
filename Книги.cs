@@ -12,18 +12,16 @@ namespace school1
     using System;
     using System.Collections.Generic;
     
-    public partial class Gender
+    public partial class Книги
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Gender()
-        {
-            this.Client = new HashSet<Client>();
-        }
+        public int id_книги { get; set; }
+        public string Название { get; set; }
+        public int Автор { get; set; }
+        public int Цена { get; set; }
+        public int Количество_магазин { get; set; }
+        public int Количество_склад { get; set; }
+        public string Обложка { get; set; }
     
-        public string Code { get; set; }
-        public string Name { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Client> Client { get; set; }
+        public virtual Авторы Авторы { get; set; }
     }
 }

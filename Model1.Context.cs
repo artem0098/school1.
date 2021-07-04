@@ -13,10 +13,10 @@ namespace school1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CarkovEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public CarkovEntities()
-            : base("name=CarkovEntities")
+        public Entities()
+            : base("name=Entities")
         {
         }
     
@@ -25,16 +25,7 @@ namespace school1
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Client> Client { get; set; }
-        public virtual DbSet<ClientService> ClientService { get; set; }
-        public virtual DbSet<DocumentByService> DocumentByService { get; set; }
-        public virtual DbSet<Gender> Gender { get; set; }
-        public virtual DbSet<Manufacturer> Manufacturer { get; set; }
-        public virtual DbSet<Product> Product { get; set; }
-        public virtual DbSet<ProductPhoto> ProductPhoto { get; set; }
-        public virtual DbSet<ProductSale> ProductSale { get; set; }
-        public virtual DbSet<Service> Service { get; set; }
-        public virtual DbSet<ServicePhoto> ServicePhoto { get; set; }
-        public virtual DbSet<Tag> Tag { get; set; }
+        public virtual DbSet<Авторы> Авторы { get; set; }
+        public virtual DbSet<Книги> Книги { get; set; }
     }
 }
