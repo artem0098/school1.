@@ -33,6 +33,9 @@ namespace school1
 
         }
         int i = -1;
+        /// <summary>
+        /// загрузка картинок
+        /// </summary>
         private void MediaElement_Initialized(object sender, EventArgs e)
         { 
             i++;
@@ -46,7 +49,9 @@ namespace school1
 
             }
         }
-
+        /// <summary>
+        /// название книг
+        /// </summary>
         private void TextBlock_Initialized(object sender, EventArgs e)
         {
             if (i < ServisList.Count)
